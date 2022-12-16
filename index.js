@@ -6,14 +6,13 @@ const { default: Choice } = require('inquirer/lib/objects/choice');
 const generateMarkdown=require('./utils/generateMarkdown')
 
 // Function to write README file using the user input
-function writeToFile(fileName, data) {
-  // TODO:
-  // fs write function to create the README.md file
-  // path package can be used to create the file path
-}
+// function writeToFile(fileName, data) {
+//   // TODO:
+//   // fs write function to create the README.md file
+//   // path package can be used to create the file path
+// }
 
 // Function to initialize app
-function init() {
     inquirer.promt([
     {
       // question object for github user name
@@ -62,7 +61,7 @@ function init() {
       // question object for usage of the repo
       type: "input",
       name: "usage",
-      message: "nter usage info",
+      message: "enter usage info",
     },
     {
       // question object for contributing to the repo
@@ -80,6 +79,6 @@ function init() {
   // inside .then callback
   // call generateMarkdown passing answer object as input argument
   // call writeFile passing file name and the returned value from generateMarkdown function as input arguments
-}
+
 
 init();
