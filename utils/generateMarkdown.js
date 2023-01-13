@@ -1,3 +1,4 @@
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -18,7 +19,20 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// function renderLicenseLink(license) {
+//     if (hello.license == "MIT") {
+//       licenseLink = "https://www.mit.edu/~amini/LICENSE.md"
+//     } else if (hello.license == "APACHE 2.0") {
+//       licenseLink = "https://www.apache.org/licenses/LICENSE-2.0"
+//     } else if (hello.license == "GPL 3.0") {
+//       licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html"
+//     } else if (hello.license == "BSD 3") {
+//       licenseLink = "https://en.wikipedia.org/wiki/BSD_licenses"
+//     } else {
+//       return
+//     }
+//     return licenseLink
+// };
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string

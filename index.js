@@ -2,7 +2,6 @@
 // 'fs', 'path', 'inquirer', './utils/generateMarkdown'
 const fs=require('fs');
 const inquirer=require('inquirer');
-const { default: Choice } = require('inquirer/lib/objects/choice');
 const generateMarkdown=require('./utils/generateMarkdown')
 
 // Function to write README file using the user input
@@ -11,13 +10,11 @@ const generateMarkdown=require('./utils/generateMarkdown')
 //   // fs write function to create the README.md file
 //   // path package can be used to create the file path
 // }
-
-// Function to initialize app
-    inquirer.promt([
+  inquirer.prompt([
     {
       // question object for github user name
       type: "input",
-      name: "Github",
+      name: "github",
       message: "What is your github username",
     },
     {
@@ -74,11 +71,11 @@ const generateMarkdown=require('./utils/generateMarkdown')
         err? console.log(err) : console.log('Generating README')
     );
 });
-  // TODO:
-  // call inquirer prompt method for questions
-  // inside .then callback
-  // call generateMarkdown passing answer object as input argument
-  // call writeFile passing file name and the returned value from generateMarkdown function as input arguments
 
+function writeToFile(fileName, data) {}
 
+// TODO: Create a function to initialize app
+function init() {}
+
+// Function call to initialize app
 init();
